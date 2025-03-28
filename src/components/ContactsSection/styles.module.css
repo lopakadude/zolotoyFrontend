@@ -1,0 +1,111 @@
+.contactsSection__container {
+  display: flex;
+  padding: 0 64px;
+  column-gap: 30px;
+}
+.contactsSection__contacts {
+  font-family: 'Tinos', serif;
+  width: 28.888vw;
+}
+.contactsSection__telNumber {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  color: var(--text-primary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.contactsSection__schedule {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  color: var(--text-secondary);
+  padding: 0;
+  margin: 28px 0 43px;
+}
+.contactsSection__address {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  padding: 0;
+  margin: 0;
+}
+
+.contactsSection__map {
+  width: 60vw;
+  height: 470px;
+}
+
+.contactsSection__frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .contactsSection__map {
+    width: 864px;
+}
+  .contactsSection__contacts {
+    width: 416px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .contactsSection__telNumber {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .contactsSection__telNumber {
+    font-size: 20px;
+  }
+  .contactsSection__container {
+    padding: 0 44px;
+  }
+    .contactsSection__schedule {
+    font-size: 16px;
+  }
+  .contactsSection__address {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .contactsSection__telNumber {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactsSection__container {
+    flex-direction: column;
+    padding: 0;
+    
+  }
+  .contactsSection__contacts {
+    padding: 0 16px;
+    margin-bottom: 32px;
+    width: calc(100vw - 32px);
+  }
+  .contactsSection__map {
+    width: 100vw;
+    height: 600px;
+  }
+  .contactsSection__telNumber {
+    font-size: 18px;
+  }
+  .contactsSection__schedule {
+    font-size: 16px;
+  }
+  .contactsSection__address {
+    font-size: 16px;
+  }
+}

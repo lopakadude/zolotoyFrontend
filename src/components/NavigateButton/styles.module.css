@@ -1,0 +1,12 @@
+.navigateButton {
+  background-color: transparent;
+  color: var(--background-color);
+  font-family: Tinos;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}

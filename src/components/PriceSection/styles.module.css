@@ -1,0 +1,242 @@
+.priceSection__container {
+  padding: 0 64px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.priceSection__form {
+  width: 100%;
+}
+
+.priceSection__subtitle {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 115%;
+  padding: 0;
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+.priceSection__h4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 115%;
+  padding: 0;
+  margin: 0 0 32px;
+  text-align: center;
+}
+
+.priceSection__editButton {
+  position: absolute;
+  right: 60px;
+  top: 14px;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  border: none;
+  background-color: var(--background-button-primary-default);
+  transition: background-color 0.3s ease;
+  background-image: url('../../assets/main/editIcon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+    0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  cursor: pointer;
+}
+
+.priceSection__editButton:hover {
+  background-color: var(--background-button-primary-hover-pressed);
+  transition: background-color 0.3s ease;
+}
+
+.priceSection__editButton:active {
+  background-color: var(--background-button-primary-hover-pressed);
+  transition: background-color 0.3s ease;
+}
+
+.priceSection__editButton_cancel {
+  background-color: var(--background-primary-disabled);
+  background-image: url('../../assets/main/cancelEditIcon.svg');
+}
+
+.priceSection__section {
+  display: flex;
+  width: 100%;
+  column-gap: 2px;
+  box-sizing: border-box;
+  background-color: var(--border-primary);
+  border: 1px solid var(--border-primary);
+  margin-bottom: 56px;
+}
+
+.priceSection__column {
+  flex-basis: 33.3333%;
+}
+
+.priceSection__columnName {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  margin: 0;
+  padding: 18px 0 17px 0;
+  background-color: var(--background-button-primary-default);
+  text-align: center;
+  color: var(--background-color);
+}
+
+.priceSection__standard {
+  flex-basis: 33.333%;
+}
+
+.priceSection__cell {
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 15px 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  width: 100%;
+  text-align: center;
+}
+
+.priceSection__input {
+  padding: 3px 8px;
+  box-sizing: border-box;
+  height: 55.2px;
+  border-radius: 8px;
+  border: 1px solid var(--background-primary-disabled);
+}
+
+.priceSection__goldColumn {
+  flex-basis: 11.111%;
+}
+
+.priceSection__submitButton {
+  position: absolute;
+  bottom: -80px;
+  right: 64px;
+}
+
+@media screen and (min-width: 1440px) {
+  .priceSection__form {
+    width: 1332px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .priceSection__columnName {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .priceSection__columnName {
+    font-size: 17px;
+  }
+  .priceSection__cell {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .priceSection__columnName {
+    font-size: 15px;
+  }
+  .priceSection__cell {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .priceSection__cell {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .priceSection__container {
+    padding: 0;
+  }
+  .priceSection__subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .priceSection__h4 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .priceSection__editButton {
+    top: -9px;
+    right: 8px;
+  }
+  .priceSection__section {
+    flex-direction: column;
+    row-gap: 1px;
+  }
+  .priceSection__column {
+    width: 100vw;
+    display: flex;
+    column-gap: 1px;
+  }
+  .priceSection__goldColumn {
+    width: 100vw;
+    display: flex;
+  }
+
+  .priceSection__columnName {
+    flex-basis: 40%;
+    font-size: 20px;
+  }
+  .priceSection__columnName_mobileRate {
+    font-size: 16px;
+    padding: 20px 8px;
+  }
+  .priceSection__cellAndName {
+    background-color: var(--background-button-primary-default);
+    color: var(--background-color);
+    flex-basis: 60%;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Tinos', serif;
+  }
+  .priceSection__cell {
+    flex-basis: 60%;
+    font-size: 16px;
+  }
+  .priceSection__section_prices {
+    flex-direction: row;
+  }
+  .priceSection__column_mobileBig {
+    flex-basis: 58.9%;
+    flex-direction: column;
+  }
+  .priceSection__column_mobileRate {
+    flex-basis: 20.5%;
+    flex-direction: column;
+  }
+  .priceSection__editButton {
+    width: 40px;
+    height: 40px;
+  }
+  .priceSection__submitButton {
+    bottom: -70px;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .priceSection__columnName_mobileRate {
+    padding: 10.5px 8px;
+  }
+}
+
+@media screen and (max-width: 404px) {
+  .priceSection__columnName_mobileRate {
+    padding: 1px 7px;
+  }
+}

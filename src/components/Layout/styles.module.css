@@ -1,0 +1,22 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.layout__main {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  flex: 1 0 auto;
+  z-index: 2;
+}
+
+@media screen and (min-width: 1440px) {
+  .layout__main{
+  width: var(--max-desktop-width);
+  }
+}

@@ -1,0 +1,135 @@
+.header__top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.header__logo {
+  margin-top: 8px;
+  margin-left: 9px;
+  width: 140px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.header__telIcon {
+  display: none;
+}
+
+.header__telLegend {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: end;
+  padding: 0;
+  margin: 0 0 4px 0;
+}
+
+.header__telNumber {
+  font-family: 'Tinos', serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.navBar {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  width: 41.3vw;
+}
+
+@media screen and (min-width: 1440px) { 
+.navBar {
+  width: 596px;
+} 
+  
+}
+
+.navBar__navButton {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.navBar__navItem {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 1090px) {
+  .navBar__navItem {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .navBar__navItem {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .navBar__navItem {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .header__top {
+    padding: 0 16px;
+  }
+  .header__logo {
+    margin: 0;
+    width: 126px;
+    height: 24px;
+    order: 1;
+  }
+  .header__telContainer {
+    margin: 0;
+    order: 2;
+  }
+  .header__navContainer {
+    order: 3;
+  }
+  .header__telLegend {
+    display: none;
+  }
+  .header__telNumber {
+    font-size: 16px;
+    order: 2;
+  }
+  .header__telNumber::before {
+    content: '';
+  }
+  .navBar {
+display: none;
+}
+  .navBar__navItem {
+    font-size: 16px;
+  }
+  .header__telIcon {
+    display: block;
+  }
+  .header__telContainer {
+    display: flex;
+    align-items: center;
+}
+}
+.navBar__navItem_white {
+color: var(--background-color) ;
+}

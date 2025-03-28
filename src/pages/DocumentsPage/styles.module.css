@@ -1,0 +1,39 @@
+.documentsPage {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  padding: 100px 64px 160px 64px;
+}
+.documentsPage__title {
+  font-family: 'Tinos', serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 95%;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 24px;
+}
+.documentsPage__container {
+  margin: 64px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.documentsPage__link {
+  text-decoration: none;
+  color: var(--text-link);
+  font-size: 18px;
+  line-height: 140%;
+}
+@media screen and (max-width: 920px) {
+.documentsPage {
+  padding: 48px 44px 80px;
+}
+}
+@media screen and (max-width: 768px) {
+  .documentsPage {
+  padding: 48px 16px 80px;
+}
+.documentsPage__title {
+  font-size: 32px;
+  line-height: 115%;
+}
+}

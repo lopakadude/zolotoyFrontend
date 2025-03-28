@@ -1,0 +1,42 @@
+.menuButton {
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  z-index: 5;
+  order: 3;
+  display: none;
+}
+
+.menuButton__line {
+  display: block;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 18px;
+  height: 2px;
+  background-color: var(--text-primary);
+}
+
+.menuButton__line_active:nth-of-type(1) {
+  transform: rotate(45deg) translate(3px, 8px);
+  width: 26px;
+}
+
+.menuButton__line_active:nth-of-type(2) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menuButton__line_active:nth-of-type(3) {
+  transform: rotate(-45deg) translate(3px, -8px);
+  width: 26px;
+}
+
+@media screen and (max-width: 768px) {
+  .menuButton {
+    display: flex;
+  }
+  
+}

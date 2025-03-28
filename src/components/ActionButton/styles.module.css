@@ -1,0 +1,48 @@
+.actionButton {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  width: 320px;
+  height: 56px;
+  box-sizing: border-box;
+  padding: 15px 50px;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  color: var(--background-color);
+  background-color: var(--background-button-primary-default);
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .actionButton {
+    width: 343px;
+  }
+  
+}
+
+.actionButton:hover {
+  transition: background-color 0.3s ease;
+  background-color: var(--background-button-primary-hover-pressed);
+}
+
+.actionButton:active {
+  transition: background-color 0.3s ease;
+  background-color: var(--background-button-primary-hover-pressed);
+}
+
+.actionButton_disabled {
+  background-color: var(--background-primary-disabled);
+  color:var(--text-tertiary);
+}
+
+.actionButton_disabled:hover {
+  background-color: var(--background-primary-disabled);
+  color:var(--text-tertiary);
+}
+
+.actionButton_disabled:active {
+  background-color: var(--background-primary-disabled);
+  color:var(--text-tertiary);
+}

@@ -1,0 +1,8 @@
+.backTo {
+  display: flex;
+  align-items: center;
+  column-gap: 9px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

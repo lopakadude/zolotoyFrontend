@@ -1,0 +1,74 @@
+.getLoanSection__list {
+  display: grid;
+  grid-template-columns: 36.8vw 36.8vw;
+  column-gap: 6.38vw;
+  padding: 0 144px;
+  margin: 0;
+  justify-content: space-between;
+  row-gap: 24px;
+  list-style: none;
+}
+
+.getLoanSection__listItemTitle {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  padding: 0 0 7px 0;
+  margin: 0 0 17px 0;
+  border-bottom: 2px solid var(--background-button-primary-hover-pressed);
+}
+.getLoanSection__listItemTitle::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: var(--background-button-primary-hover-pressed);
+  top: 45px;
+}
+.getLoanSection__listItemDescription {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: var(--text-secondary);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .getLoanSection__list {
+      grid-template-columns: 530px 530px;
+      column-gap: 92px;
+  }
+}
+
+@media screen and (max-width: 985px) {
+.getLoanSection__list {
+  padding: 0 64px;
+}
+}
+
+@media screen and (max-width: 920px) {
+.getLoanSection__listItemTitle {
+  font-size: 24px;
+}
+.getLoanSection__listItemDescription {
+  font-size: 16px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.getLoanSection__list {
+  grid-template-columns: 91.46vw;
+  padding: 0 16px;
+}
+.getLoanSection__listItemTitle {
+  font-size: 17px;
+  font-weight: 700;
+
+}
+.getLoanSection__listItemDescription {
+  font-size: 16px;
+}
+}

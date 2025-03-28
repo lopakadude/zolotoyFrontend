@@ -1,0 +1,124 @@
+.detailsPage {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  padding: 100px 64px 160px 64px;
+}
+
+.detailsPage__title {
+  font-family: 'Tinos', serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 95%;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.detailsPage__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+  margin-top: 64px;
+}
+.detailsPage__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  position: relative;
+  margin: 0;
+}
+
+.detailsPage__list::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-primary);
+  bottom: -40px;
+  left: 0;
+}
+
+.detailsPage__list:last-child::after {
+  display: none;
+}
+
+.detailsPage__listItem {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  column-gap: 30px;
+}
+
+.detailsPage__listItem::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--background-primary-disabled);
+  bottom: -12px;
+  left: 0;
+}
+
+.detailsPage__listItem:last-child::after {
+  display: none;
+}
+
+.detailsPage__listItemDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--text-tertiary);
+  margin: 0;
+  padding: 0;
+  width: 28.88vw;
+}
+
+.detailsPage__listItemValue {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  width: 44.86vw;
+}
+
+@media screen and (min-width: 1440px) {
+  .detailsPage__listItemDescription {
+    width: 416px;
+  }
+  .detailsPage__listItemValue {
+    width: 646px;
+  }
+}
+
+@media screen and (max-width: 985px) {
+.detailsPage {
+padding-left: 44px;
+padding-right: 44px;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .detailsPage {
+padding: 80px 16px 160px;
+}
+  .detailsPage__title {
+    font-size: 32px;
+    line-height: 115%;
+  }
+  .detailsPage__container {
+    row-gap: 64px;
+  }
+  .detailsPage__list::after {
+    bottom: -32px;
+  }
+.detailsPage__listItem {
+  flex-direction: column;
+  row-gap: 8px;
+}
+.detailsPage__listItemValue {
+font-size: 16px;
+}
+}
