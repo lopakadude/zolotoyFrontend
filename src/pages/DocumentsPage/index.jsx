@@ -8,14 +8,15 @@ export default function DocumentsPage() {
       <h1 className={styles.documentsPage__title}>Документы</h1>
       <BackTo />
       <div className={styles.documentsPage__container}>
-        <a
+        <p
           className={styles.documentsPage__link}
-          href={ERGUL}
-          target="_blank"
-          download
+          // href={ERGUL}
+          // target="_blank"
+          // download
+          // disabled
         >
           Пробирная палата
-        </a>
+        </p>
         <a
           className={styles.documentsPage__link}
           href={ERGUL}
@@ -24,22 +25,22 @@ export default function DocumentsPage() {
         >
           Лист записи из ЕГРЮЛ от 06.02.2025
         </a>
-        <a
+        <p
           className={styles.documentsPage__link}
-          href={ERGUL}
-          target="_blank"
-          download
+          // href={ERGUL}
+          // target="_blank"
+          // download
         >
           Выписка из реестра ломбардов
-        </a>
-        <a
+        </p>
+        <p
           className={styles.documentsPage__link}
-          href={ERGUL}
-          target="_blank"
-          download
+          // href={ERGUL}
+          // target="_blank"
+          // download
         >
           Свидетельство «ЛИГА ЛОМБАРДОВ»
-        </a>
+        </p>
       </div>
     </section>
   );
