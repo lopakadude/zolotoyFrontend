@@ -14,12 +14,15 @@
   transition: opacity 0.3s ease;
 }
 
-.modal_active {
+@media screen and (max-width: 768px) {
+  .modal_active {
     width: 100vw;
   opacity: 1;
   z-index: 5;
   transition: opacity 0.3s ease;
 }
+}
+
 
 .modal__overlay {
   width: 0;

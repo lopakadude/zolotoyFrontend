@@ -12,12 +12,15 @@
   transition: all 0.3s ease;
 }
 
-.menu_active {
+@media screen and (max-width: 768px) {
+  .menu_active {
   width: 100vw;
   transform: translate(0, 0);
   opacity: 1;
   transition: all 0.3s ease;
 }
+}
+
 
 .navBar {
   display: flex;

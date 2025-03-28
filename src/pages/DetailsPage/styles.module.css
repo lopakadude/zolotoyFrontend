@@ -71,7 +71,7 @@
   color: var(--text-tertiary);
   margin: 0;
   padding: 0;
-  width: 28.88vw;
+  width: 28.88%;
 }
 
 .detailsPage__listItemValue {
@@ -81,7 +81,7 @@
   padding: 0;
   margin: 0;
   text-align: left;
-  width: 44.86vw;
+  width: 44.86%;
 }
 
 @media screen and (min-width: 1440px) {
@@ -120,5 +120,6 @@ padding: 80px 16px 160px;
 }
 .detailsPage__listItemValue {
 font-size: 16px;
+width: 100%;
 }
 }

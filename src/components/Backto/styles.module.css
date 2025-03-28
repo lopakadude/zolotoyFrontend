@@ -5,4 +5,5 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  color: var(--text-primary);
 }
