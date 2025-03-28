@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const api = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:3001/',
+    baseUrl: 'http://89.169.153.191:3001/',
     prepareHeaders: headers => {
       const authToken = localStorage.getItem('authToken');
       if (authToken) {
@@ -13,7 +13,7 @@ export const api = createApi({
       return headers;
     },
   }),
-  tagTypes: ['Auth', 'Review', 'Prices'], 
+  tagTypes: ['Auth', 'Review', 'Prices'],
   endpoints: build => ({
     login: build.mutation({
       query: credentials => ({
@@ -57,7 +57,7 @@ export const api = createApi({
       }),
       providesTags: ['Prices'],
     }),
-    
+
     patchPricesData: build.mutation({
       query: data => ({
         url: `prices`,
